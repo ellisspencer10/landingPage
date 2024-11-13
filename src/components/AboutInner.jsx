@@ -26,7 +26,7 @@ const AboutInner = () => {
         <Box w={{ base: "100%", lg: "50%" }}>
           <Box textAlign={{ base: "center", lg: "start" }}>
             <Heading fontWeight="400">
-              Join our global community and get access
+              Join Our Community of Flexible, Subscription-Based Services
             </Heading>
             <Text
               fontSize="15px"
@@ -35,8 +35,11 @@ const AboutInner = () => {
               mt="1rem"
               mb="2rem"
             >
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
+              Empower your business with our flexible subscription model.
+              Choose from our suite of ChatGPT-powered services each month, and
+              enjoy the freedom to tailor your plan based on your changing
+              needs. This unique approach gives you full control over what you
+              use, without the hassle of long-term commitments.
             </Text>
           </Box>
           <Flex flexDirection="column" gap="1rem" px="16px">
@@ -59,7 +62,7 @@ const AboutInner = () => {
                   textTransform="capitalize"
                   mb="10px"
                 >
-                  Virtual Card
+                  Flexible Service Options
                 </Heading>
                 <Text
                   fontWeight="300"
@@ -68,8 +71,9 @@ const AboutInner = () => {
                   color="grayText"
                   fontSize="15px"
                 >
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Our subscription model allows you to add or remove services
+                  each month. Customize your experience and only pay for what
+                  you need, when you need it.
                 </Text>
               </CardBody>
             </Card>
@@ -93,7 +97,7 @@ const AboutInner = () => {
                   textTransform="capitalize"
                   mb="10px"
                 >
-                  Buyer Protection
+                  Full Control & Customization
                 </Heading>
                 <Text
                   fontWeight="300"
@@ -102,8 +106,9 @@ const AboutInner = () => {
                   color="grayText"
                   fontSize="15px"
                 >
-                  There are many variations of passages of Lorem Ipsum
-                  available.
+                  Enjoy the flexibility to adapt your subscription to your
+                  business’s evolving needs. Experiment with services to find
+                  the best fit, making adjustments as your business grows.
                 </Text>
               </CardBody>
             </Card>
@@ -112,7 +117,6 @@ const AboutInner = () => {
         <Box
           display="flex"
           justifyContent="center"
-          //   mx={{ base: "auto", lg: "none" }}
           mt={{ base: "1rem", lg: "0" }}
           w={{ base: "100%", lg: "50%" }}
           as={motion.div}

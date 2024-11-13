@@ -33,6 +33,7 @@ const ServiceCard = ({ title, Icon, colorCode, body, isActive }) => {
         flexDir="column"
         justifyContent="center"
         alignItems="center"
+        textAlign="center"
       >
         <Icon fontSize="3rem" color={colorCode} />
         <Heading py="1rem" size="md" fontWeight="400">

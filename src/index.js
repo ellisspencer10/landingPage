@@ -3,16 +3,16 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ChakraProvider } from "@chakra-ui/react";
-import { extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
+// Define custom colors and fonts
 const colors = {
-  primary: "#a37cfc",
-  secondary: "#1e1e1e",
-  pink: "#fd8dae",
-  teal: "#2ed4ef",
-  grayText: "#8E989F",
-  purplee: "#1431c6",
+  primary: "#a37cfc", // Brand primary color
+  secondary: "#1e1e1e", // Secondary color for text
+  accentPink: "#fd8dae", // Accent color for highlights
+  accentTeal: "#2ed4ef", // Teal accent for call-to-actions
+  grayText: "#8E989F", // Gray for muted text
+  darkPurple: "#1431c6", // Dark purple for headers or emphasis
 };
 
 const fonts = {
@@ -20,6 +20,7 @@ const fonts = {
   body: `'Poppins', sans-serif`,
 };
 
+// Extend the Chakra theme with custom configurations
 const theme = extendTheme({ colors, fonts });
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -31,7 +32,5 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Measure performance if needed
 reportWebVitals();

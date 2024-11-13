@@ -45,14 +45,10 @@ const Portfolio = () => {
             delay: 3,
             ease: [0, 0.71, 0.2, 1.01],
           }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
           w={{ base: "100%", lg: "50%" }}
         >
           <Heading fontWeight="400" textAlign={{ base: "center", lg: "start" }}>
-            Popular features that your business needs
+            Flexible Features to Boost Your Business
           </Heading>
           <Text
             textAlign={{ base: "center", lg: "start" }}
@@ -63,8 +59,10 @@ const Portfolio = () => {
             fontSize="15px"
             lineHeight="2"
           >
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            Discover how our customizable, AI-driven features can enhance your
+            business efficiency and improve customer interactions. With options
+            to adjust your services monthly, you get exactly what you need when
+            you need it.
           </Text>
           <Box width="100%" margin="0 auto">
             <Carousel />

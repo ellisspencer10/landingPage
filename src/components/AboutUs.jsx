@@ -21,6 +21,7 @@ const AboutUs = () => {
 
   const [bg2, bgHover2] = useToken("colors", ["white", "teal"]);
   const color2 = useColorModeValue("teal", "white");
+
   return (
     <Container maxW="1200px" id="aboutUs">
       <Flex
@@ -51,7 +52,7 @@ const AboutUs = () => {
         <Box w={{ base: "100%", lg: "50%" }}>
           <Box textAlign={{ base: "center", lg: "start" }}>
             <Heading fontWeight="400">
-              Save Your Time & See How It works any platform
+              Discover the Power of Flexible, AI-Powered Services
             </Heading>
             <Text
               fontSize="15px"
@@ -60,14 +61,15 @@ const AboutUs = () => {
               mt="1rem"
               mb="3rem"
             >
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
+              Our subscription-based model lets you pick and choose from a range
+              of services each month. Adjust your subscription as your business
+              needs change, and explore new ways to automate and enhance your
+              operations—on your terms.
             </Text>
           </Box>
           <Flex gap="2rem" flexDir={{ base: "column", lg: "row" }}>
             <Card
               w={"100%"}
-              //   mb={{ base: "1rem", lg: "0" }}
               mx="auto"
               boxShadow="xl"
               bg={bg}
@@ -103,7 +105,11 @@ const AboutUs = () => {
                 py="2.5rem"
               >
                 <GoGraph color={color} fontSize="3rem" />
-                <Text mt="10px">Process Title</Text>
+                <Text mt="10px">Flexible Options</Text>
+                <Text fontSize="13px" textAlign="center" color="grayText" mt="5px">
+                  Customize your subscription each month. Try new services or stick
+                  with what works best.
+                </Text>
               </CardBody>
             </Card>
             <Card
@@ -143,7 +149,11 @@ const AboutUs = () => {
                 py="2.5rem"
               >
                 <AiOutlineUser color={color2} fontSize="3rem" />
-                <Text mt="10px">Recipient</Text>
+                <Text mt="10px">Client-Centered Control</Text>
+                <Text fontSize="13px" textAlign="center" color="grayText" mt="5px">
+                  You’re in charge—add or remove services as needed to match your
+                  goals and priorities.
+                </Text>
               </CardBody>
             </Card>
           </Flex>

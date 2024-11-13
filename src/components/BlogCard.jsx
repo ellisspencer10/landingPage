@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 
-const BlogCard = ({ imageUrl, title, body }) => {
+const BlogCard = ({ imageUrl, title, body, date = "November 28, 2023" }) => {
   return (
     <Card
       transition="all 1s ease"
@@ -33,9 +33,8 @@ const BlogCard = ({ imageUrl, title, body }) => {
           justifyContent="center"
           cursor="pointer"
           _hover={{ bg: "primary" }}
-          tr
         >
-          November 28, 2019
+          {date}
         </Box>
         <Image src={imageUrl} alt={title} borderRadius="none" />
         <Stack mt="8" mb="5px" pl="5px" spacing="3">

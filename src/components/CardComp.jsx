@@ -33,6 +33,7 @@ const CardComp = ({ title, Icon, colorCode }) => {
           size="md"
           fontWeight="300"
           lineHeight="1.5em"
+          textAlign="center"
         >
           {title}
         </Heading>

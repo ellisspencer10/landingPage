@@ -23,8 +23,6 @@ const Banner = () => {
       backgroundImage={`url(${BgSvg})`}
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
-      // bgGradient="linear(to-r, purple.400, purple.500)"
-      // maxH="400px"
       height="100%"
       width="100%"
       alignItems={{ base: "start", md: "center" }}
@@ -38,7 +36,6 @@ const Banner = () => {
         height={{ base: "100%", lg: "100vh" }}
         maxH="500px"
         m={"auto"}
-        // mb={{ base: "2rem", md: "0" }}
         pt={{ base: 0, lg: "5rem" }}
       >
         <Box
@@ -70,7 +67,7 @@ const Banner = () => {
             maxWidth={{ base: "300px", lg: "100%" }}
             lineHeight={{ base: "1.5" }}
           >
-            Sofbox is the Best Software Landing Website Ever.
+            Discover Scalable, Client-Controlled Business Solutions
           </Heading>
           <Text
             as={motion.div}
@@ -95,8 +92,9 @@ const Banner = () => {
             maxWidth={{ base: "300px", lg: "100%" }}
             fontWeight="300"
           >
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form.
+            Tailor your subscription each month with our suite of ChatGPT-driven
+            services. Adjust as your business needs evolve—giving you ultimate
+            control with minimal effort.
           </Text>
           <Button
             as={motion.div}
@@ -122,7 +120,7 @@ const Banner = () => {
               bg: "black",
             }}
           >
-            Read More
+            Learn More
           </Button>
         </Flex>
       </Flex>
@@ -131,7 +129,6 @@ const Banner = () => {
         alignItems="center"
         w={{ base: "75%", md: "50%" }}
         m={"auto"}
-        // mt="5rem"
         position="relative"
         as={motion.div}
         initial={{ opacity: 0, y: 200 }}

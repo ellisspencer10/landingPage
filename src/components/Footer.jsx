@@ -17,9 +17,9 @@ const Footer = () => {
   const columns = useBreakpointValue({
     base: "repeat(1, 1fr)",
     sm: "repeat(2, 1fr)",
-    // md: "repeat(3, 1fr)",
     lg: "repeat(4, 1fr)",
   });
+
   return (
     <Box bg="primary" id="contactUs">
       <Container maxW="1200px" mt="120px">
@@ -46,8 +46,8 @@ const Footer = () => {
                     color="white"
                     textAlign="start"
                   >
-                    Subscribe to our newsletter and get 10% off your first
-                    purchase.
+                    Join our subscription service and customize your business
+                    solutions each month to fit your evolving needs.
                   </Text>
                 </Box>
               </Flex>
@@ -62,9 +62,9 @@ const Footer = () => {
                 </Flex>
                 <Flex fontSize="15px" flexDir="column">
                   <Link mb="10px">Home</Link>
-                  <Link mb="10px">Blog</Link>
-                  <Link mb="10px">Careers</Link>
+                  <Link mb="10px">Features</Link>
                   <Link mb="10px">Pricing</Link>
+                  <Link mb="10px">Testimonials</Link>
                   <Link>Contact</Link>
                 </Flex>
               </Flex>
@@ -78,11 +78,10 @@ const Footer = () => {
                   </Heading>
                 </Flex>
                 <Flex fontSize="15px" flexDir="column">
-                  <Link mb="10px">Home</Link>
-                  <Link mb="10px">Blog</Link>
+                  <Link mb="10px">Our Mission</Link>
                   <Link mb="10px">Careers</Link>
-                  <Link mb="10px">Pricing</Link>
-                  <Link>Contact</Link>
+                  <Link mb="10px">Privacy Policy</Link>
+                  <Link mb="10px">Terms of Service</Link>
                 </Flex>
               </Flex>
             </GridItem>
@@ -91,7 +90,7 @@ const Footer = () => {
               <Flex flexDir="column">
                 <Flex alignItems="center" height="80px">
                   <Heading size="md" fontWeight="400">
-                    Quick Links
+                    Contact Us
                   </Heading>
                 </Flex>
                 <Flex fontSize="15px" flexDir="column">
@@ -101,11 +100,11 @@ const Footer = () => {
                   </Flex>
                   <Flex mb="15px" alignItems="center">
                     <AiOutlineMail fontSize="1.5rem" />
-                    <Link ml="10px">support@iqnonicthemes.com</Link>
+                    <Link ml="10px">support@yourbusiness.com</Link>
                   </Flex>
                   <Flex mb="15px" alignItems="center">
                     <AiOutlineHome fontSize="1.5rem" />
-                    <Link ml="10px">1234 North Avenue Luke Lane</Link>
+                    <Link ml="10px">1234 Business Road, Suite 101</Link>
                   </Flex>
                 </Flex>
               </Flex>
@@ -117,7 +116,7 @@ const Footer = () => {
       <Box borderTop="1px solid" py="1rem" mt="1rem" color="white">
         <Container maxW="1200px">
           <Text textAlign="end" fontSize="15px">
-            Copyright 2021 sofbox All Rights Reserved.
+            © 2024 [Your Business Name]. All Rights Reserved.
           </Text>
         </Container>
       </Box>

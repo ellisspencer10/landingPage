@@ -1,7 +1,11 @@
+/* General App Styling */
 .App {
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
 }
 
+/* Logo Animation and Styling */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,21 +17,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +24,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Header Styling */
+.App-header {
+  background-color: #1a202c; /* Darker background for a sleek look */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: #f7fafc; /* Softer white text */
+  padding: 20px;
+}
+
+/* Link Styling */
+.App-link {
+  color: #3182ce; /* Calming blue color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.App-link:hover {
+  color: #2b6cb0;
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+.App-footer {
+  background-color: #2d3748; /* Darker footer for contrast */
+  color: #cbd5e0;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
 }

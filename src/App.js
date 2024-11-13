@@ -13,15 +13,30 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
+      {/* Header provides navigation and brand identity */}
       <Header />
+
+      {/* Banner serves as the hero section to engage visitors */}
       <Banner />
+
+      {/* About Us sections introduce the company's mission */}
       <AboutUs />
       <AboutInner />
+
+      {/* Features and Services showcase key offerings and options */}
       <Features />
       <Service />
+
+      {/* Portfolio displays examples of work or product highlights */}
       <Portfolio />
+
+      {/* Team section introduces team members and builds credibility */}
       <Team />
+
+      {/* Blog provides informative content and engages with audience */}
       <Blog />
+
+      {/* Footer contains contact information and essential links */}
       <Footer />
     </div>
   );

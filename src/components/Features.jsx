@@ -23,52 +23,52 @@ const Features = () => {
   const columns = useBreakpointValue({
     base: "repeat(1, 1fr)",
     sm: "repeat(2, 1fr)",
-    // md: "repeat(3, 1fr)",
     lg: "repeat(4, 1fr)",
   });
 
   const featureCard = [
     {
-      title: "Stock Management System",
+      title: "Inventory & Stock Management",
       Icon: TbDeviceLaptop,
       colorCode: "#1431c6",
     },
     {
-      title: "Receivable & Payables",
+      title: "Billing & Invoicing Automation",
       Icon: GiPayMoney,
       colorCode: "#f77a4a",
     },
     {
-      title: "Manage Buying & Selling",
+      title: "Automated Sales Tracking",
       Icon: IoMdPaperPlane,
       colorCode: "#5ad4f1",
     },
     {
-      title: "Message Notification",
+      title: "Client Notification System",
       Icon: BiMessageDetail,
       colorCode: "#1431c6",
     },
     {
-      title: "Powerful & Secure Backup",
+      title: "Secure Data Backup",
       Icon: MdOutlineBackup,
       colorCode: "#f77a4a",
     },
     {
-      title: "Product Management",
+      title: "Product & Service Management",
       Icon: MdOutlineManageAccounts,
       colorCode: "#5ad4f1",
     },
     {
-      title: "Customized Pricing System",
+      title: "Dynamic Pricing Adjustments",
       Icon: MdOutlinePriceChange,
       colorCode: "#1431c6",
     },
     {
-      title: "Fastest Return System",
+      title: "Streamlined Returns Processing",
       Icon: TbTruckReturn,
       colorCode: "#f77a4a",
     },
   ];
+
   return (
     <Container maxW="1200px" mt="120px" id="features">
       <Heading fontWeight="400">Popular Features</Heading>
@@ -81,8 +81,9 @@ const Features = () => {
         color="grayText"
         fontSize="15px"
       >
-        It is a long established fact that a reader will be distracted by the
-        readable content of a page when looking at its layout.
+        Our modular AI-powered features give you full control over the tools you
+        need, allowing you to customize your subscription to match your
+        business’s growth and evolving needs.
       </Text>
 
       <Box mt="2rem">
@@ -106,10 +107,6 @@ const Features = () => {
               >
                 <GridItem>
                   <CardComp
-                    variants={{
-                      visible: { opacity: 1, scale: 1 },
-                      hidden: { opacity: 0, scale: 0 },
-                    }}
                     title={item.title}
                     Icon={item.Icon}
                     colorCode={item.colorCode}

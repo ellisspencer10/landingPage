@@ -53,24 +53,17 @@ function Header() {
       id: "contactUs",
     },
   ];
+  
   const { isOpen, onOpen, onClose } = useDisclosure();
-
   const drawerSize = useBreakpointValue({ base: "xs", md: "md" });
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset === 0) {
-        setIsScrolling(false);
-      } else {
-        setIsScrolling(true);
-      }
+      setIsScrolling(window.pageYOffset !== 0);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -80,7 +73,7 @@ function Header() {
       left="0"
       right="0"
       zIndex="999"
-      bg={"white"}
+      bg="white"
       shadow={isScrolling ? "md" : "none"}
     >
       <Container maxW="1200px">
@@ -93,7 +86,7 @@ function Header() {
           {/* Logo */}
           <Image
             src="https://templates.iqonic.design/sofbox/html/vue/sofbox-modern/dist/_nuxt/img/logo-2.aaf5cc0.png"
-            alt="Logo"
+            alt="Your Business Logo"
             boxSize="50px"
             width="45px"
           />
@@ -153,23 +146,20 @@ function Header() {
               onClick={onOpen}
             />
           </Box>
+
+          {/* Search and Cart Icons */}
           <Box display={{ base: "none", lg: "block" }}>
             <Flex>
-              {/* Serach Icon */}
-              <Box>
-                <IconButton
-                  aria-label="Cart"
-                  icon={<FaSearch />}
-                  isRound={true}
-                  size="md"
-                  variant="ghost"
-                  _hover={{
-                    bg: "transparent",
-                  }}
-                />
-              </Box>
-
-              {/* Cart Icon */}
+              <IconButton
+                aria-label="Search"
+                icon={<FaSearch />}
+                isRound={true}
+                size="md"
+                variant="ghost"
+                _hover={{
+                  bg: "transparent",
+                }}
+              />
               <Box
                 position="relative"
                 _after={{
